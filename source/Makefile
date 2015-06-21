@@ -15,7 +15,7 @@ backup-clean:
 temp-clean: backup-clean
 	rm -f *.log *.dvi *.aux
 
-clean: backup-clean
+clean: temp-clean
 	rm -f *.pdf
 
 .PHONY:	clean temp-clean backup-clean
