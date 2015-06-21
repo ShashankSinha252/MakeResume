@@ -1,0 +1,4 @@
+The framework makes use of git, bash, sed, diff,
+ patch and make utilities.
+
+The framework uses LaTeX for creating the resumes.

@@ -1,0 +1,15 @@
+The project is intended to allow creating multiple
+ resumes from a source resume with easy to build
+ and edit facilities.
+
+The project is intended to be light-weight and
+	portable, for use on any *nix machine.
+
+Refer to USAGE file for learning to use the project.
+Refer to ARCH file to know what components are used
+ in the project. To understand the workings of the
+ project, please read the source code.
+
+Comments, opinions, reviews and any other material
+ can be mailed to:
+	shashanksinhaiitd {at} gmail {dot} com

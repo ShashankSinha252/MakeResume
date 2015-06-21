@@ -1,0 +1,37 @@
+Use the source directory to create the master resume:
+
+	@ Make changes in source directory to have them
+	 reflected across all profiles
+	@ Invoke 'make' to build the resume
+	@ Invoke 'make view' to view the resume
+	@ Always build resume before viewing
+
+Use create.sh to create a new profile:
+
+	@ Enter newly created directory
+	@ Make appropriate changes and build resume using
+	 using 'make'
+	@ Invoke 'make diff' to save changes to diff.patch
+	@ Invoke 'make clean' to remove all files except
+	 Makefile and diff.patch
+	@ Invoke 'make edit' to populate directory with
+	 tex files and apply saved changes, making it
+	 ready for editing
+
+Use delete.sh to delete a profile automatically
+
+Use update.sh to update top-level Makefile
+
+Invoke 'make' with target as profile name to build
+ that resume
+
+Invoke 'make' with target:
+
+	@ 'backup-clean' to remove all backup files
+	@ 'temp-clean' to clean log, aux and dvi files
+	 as well as backup files
+	@ 'clean-tex' to remove all tex files
+	@ 'clean' to remove pdf files and all above
+	 mentioned files
+	@ 'clean-$' with $ as profile name to invoke
+	 'make temp-clean' in that profile
