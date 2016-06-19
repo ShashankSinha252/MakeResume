@@ -1,4 +1,4 @@
-TARGET =  source
+TARGET =  source payu
 CLEAN = $(TARGET:%=clean-%)
 
 all: $(TARGET)

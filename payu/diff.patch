@@ -1,0 +1,121 @@
+diff -rupN '--exclude=Makefile' '--exclude=*.pdf' '--exclude=*.patch' ../source/job.tex ./job.tex
+--- ../source/job.tex	1970-01-01 05:30:00.000000000 +0530
++++ ./job.tex	2016-06-20 01:25:28.073595397 +0530
+@@ -0,0 +1,47 @@
++%-----Job Projects-----
++\resheading{\textbf{JOB PROJECTS} }\\[\lsep]
++
++\begin{itemize}
++	\itemsep-0.25em
++	\item \textbf{Nvidia} \\
++	\emph{(\textbf{System Software Developer}, Aug'15-Current)} \\[-0.7cm]
++
++        \vspace{-0.25em}
++	\begin{itemize}
++	    \itemsep-0.25em
++
++	    \item Limit devie access on QNX
++            \vspace{-0.25em}
++
++	    	\begin{itemize}\itemsep \isep
++	    	\item Configured \textbf{permission} for custom device node on QNX RTOS 
++	    	\item Enabled \textbf{privilege verification} for resource access
++	    	\end{itemize}
++
++	    \item Enable Video Protected Region
++            \vspace{-0.25em}
++
++	    	\begin{itemize}\itemsep \isep
++	    	\item \textbf{Ported code} from Android system to Linux
++	    	\item Developed \textit{Proof-of-Concept} to confirm usage of Video Protected Region
++	    	\item \textbf{Patched} and \textbf{developed} code at bootloader, kernel, user library and user application level
++	    	\end{itemize}
++
++	    \item Patch binary signing module
++            \vspace{-0.25em}
++
++	    	\begin{itemize}\itemsep \isep
++	    	\item Corrected code logic to interact with \textit{High Security Module} for binary signing
++	    	\end{itemize}
++
++	    \item Add CRF functionality to networking stack
++            \vspace{-0.25em}
++
++	    	\begin{itemize}\itemsep \isep
++	    	\item Implemented \textit{Clock Reference Format} for low-latency network
++	    	\item Used \textbf{raw sockets} in test applications to verify functionality
++	    	\item Created control application to \textbf{configure audio clock} to support \textbf{audio streaming} in low-latency network
++	    	\end{itemize}
++
++	\end{itemize}
++\end{itemize}
+diff -rupN '--exclude=Makefile' '--exclude=*.pdf' '--exclude=*.patch' ../source/projects.tex ./projects.tex
+--- ../source/projects.tex	2016-06-19 23:58:07.017512072 +0530
++++ ./projects.tex	2016-06-20 01:25:28.073595397 +0530
+@@ -1,5 +1,5 @@
+ %-----Projects-----
+-\resheading{\textbf{MAJOR PROJECTS} }\\[\lsep]
++\resheading{\textbf{COLLEGE PROJECTS} }\\[\lsep]
+ 
+ \begin{itemize}
+ 	\itemsep-0.25em
+@@ -7,7 +7,7 @@
+ 	\emph{(\textbf{Computer and Network Security}, Apr'15)} \\[-0.7cm]
+ 
+ 		\begin{itemize}\itemsep \isep
+-		\item Automated detection of file type using \textbf{file signatures}
++		%\item Automated detection of file type using \textbf{file signatures}
+ 		\item Implemented smart extraction of files from firmware using \textit{binwalk}, leading to \textbf{lower false-positives}
+ 		\item Enabled discovery of interesting files like \textbf{private keys, encrypted files} using entropy analysis
+ 		\end{itemize}
+@@ -28,16 +28,16 @@
+ 		\begin{itemize}\itemsep \isep
+ 		\item Tested IEEE802.11 project on \textit{USRP} using \textit{GNU Radio}, resulting in a \textbf{testbench for WiFi} protocols
+ 		\item Evaluated testbench performance on \textit{BladeRF}, to achieve \textbf{lower hardware cost and portable testbench}
+-		\item Identified bugs and shortcomings of the testbench, followed by \textbf{proposal of solutions}
++		%\item Identified bugs and shortcomings of the testbench, followed by \textbf{proposal of solutions}
+ 		\end{itemize}
+ 
+-	\item \textbf{Analytics for Social-Media website} \\
+-	\emph{(\textbf{Design Practices in Computer Science}, Jul'12 - Dec'12)} \\[-0.7cm]
+-
+-		\begin{itemize}\itemsep \isep
+-		\item \textbf{Mined network communication log}, generating detailed as well as summary statistics
+-		\item Identified \textbf{clusters in social-network} graph based on communication metadata
+-		\item Designed and \textbf{tested hypotheses} using \textit{T-test} to extract information from analytics engine
+-		\end{itemize}
++%	\item \textbf{Analytics for Social-Media website} \\
++%	\emph{(\textbf{Design Practices in Computer Science}, Jul'12 - Dec'12)} \\[-0.7cm]
++%
++%		\begin{itemize}\itemsep \isep
++%		\item \textbf{Mined network communication log}, generating detailed as well as summary statistics
++%		\item Identified \textbf{clusters in social-network} graph based on communication metadata
++%		\item Designed and \textbf{tested hypotheses} using \textit{T-test} to extract information from analytics engine
++%		\end{itemize}
+ 
+ \end{itemize}
+diff -rupN '--exclude=Makefile' '--exclude=*.pdf' '--exclude=*.patch' ../source/skills.tex ./skills.tex
+--- ../source/skills.tex	2016-06-20 01:23:10.445593209 +0530
++++ ./skills.tex	2016-06-20 01:25:28.073595397 +0530
+@@ -6,6 +6,6 @@
+ 	\itemsep-0.25em
+ 	\item \noindent \textbf{Languages} (Assembly, C, Java, SML, Prolog, VHDL) \textbf{Database} (MySQL) \textbf{Scripting} (Python, Bash)
+ 	\item \noindent \textbf{Analysis Tools} (IDA Pro, gdb, Wireshark)
+-	\item \noindent \textbf{Tools} (Xilinx, Eclipse, Git, Android Studio, \LaTeX, OpenCV)
++	\item \noindent \textbf{Tools} (Xilinx, Eclipse, Git, Vim, Cscope, Android Studio, \LaTeX, OpenCV)
+ 
+ \end{itemize}
+diff -rupN '--exclude=Makefile' '--exclude=*.pdf' '--exclude=*.patch' ../source/source.tex ./source.tex
+--- ../source/source.tex	2016-06-19 23:58:07.017512072 +0530
++++ ./source.tex	2016-06-20 01:28:32.681598332 +0530
+@@ -41,8 +41,9 @@
+ 
+ \input{contact}
+ \input{acadStats}
++\input{job}
+ \input{projects}
+-\input{internship}
++%\input{internship}
+ \input{skills}
+ \input{courses}
+ %\newpage

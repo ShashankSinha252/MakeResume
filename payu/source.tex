@@ -1,0 +1,53 @@
+%%%%%HEADER%%%%%
+\documentclass[a4paper,10pt]{article}
+
+%%%%%PACKAGE SPECIFICATION%%%%%
+\usepackage[top=0.50in, bottom=0.50in, left=0.50in, right=0.50in]{geometry}
+\usepackage{graphicx}
+%\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+\fontfamily{SansSerif}
+\selectfont
+%\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=10in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+
+%%%%%CUSTOM COMMANDS%%%%%
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+%%%%%START OF CONTENT%%%%%
+\begin{document}
+
+\input{contact}
+\input{acadStats}
+\input{job}
+\input{projects}
+%\input{internship}
+\input{skills}
+\input{courses}
+%\newpage
+%\input{interests}
+\input{hobbies}
+
+\end{document}
